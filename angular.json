@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "vivid-angular-demo": "apps/vivid-angular-demo",
+    "vivid-angular-demo-e2e": "apps/vivid-angular-demo-e2e"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "root": "apps/vivid-angular-demo-e2e",
+  "sourceRoot": "apps/vivid-angular-demo-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/vivid-angular-demo-e2e/cypress.json",
+        "devServerTarget": "vivid-angular-demo:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "vivid-angular-demo:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/vivid-angular-demo-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["vivid-angular-demo"]
+}

@@ -1,0 +1,8 @@
+:host {
+  --side-drawer-background-color: var(--vvd-color-neutral-10);
+  --side-drawer-inline-size: 200px;
+}
+
+[slot="app-content"] {
+  width: calc(100vw - 240px);
+}

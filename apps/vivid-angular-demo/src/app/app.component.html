@@ -1,1 +1,6 @@
-<vivid-spring-hack-nx-welcome></vivid-spring-hack-nx-welcome>
+<vwc-side-drawer id="sideDrawer" open>
+  <vivid-spring-hack-menu [menuItems]="menuItems"></vivid-spring-hack-menu>
+  <div slot="app-content">
+    <router-outlet></router-outlet>
+  </div>
+</vwc-side-drawer>

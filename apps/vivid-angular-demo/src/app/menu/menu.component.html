@@ -1,0 +1,14 @@
+<vwc-text font-face="subtitle-2">VIVID Spring-Hack</vwc-text>
+<div>
+  <vwc-list>
+    <vwc-list-item *ngFor="let item of menuItems"
+      graphic="icon">
+      <vwc-icon
+        slot="graphic"
+        type="{{item.icon}}"
+        size="small"
+      ></vwc-icon>
+      <a routerLink="{{item.route}}">{{item.title}}</a>
+    </vwc-list-item>
+  </vwc-list>
+</div>

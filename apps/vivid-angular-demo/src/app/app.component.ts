@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'vivid-angular-demo';
+  menuItems = [
+    {
+      icon: 'preferences-line',
+      title: 'Applications',
+      route: '/'
+    },
+    {
+      icon: 'pie-chart-line',
+      title: 'Analytics',
+      route: '/analytics'
+    },
+    {
+      icon: 'wallet-line',
+      title: 'Profile',
+      route: '/profile'
+    },
+  ];
 }

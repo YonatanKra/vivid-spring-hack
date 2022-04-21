@@ -1,0 +1,16 @@
+<vwc-layout gutters="md" column-basis="block">
+  <vwc-text font-face="subtitle-1">Applications</vwc-text>
+  <vwc-layout column-basis="sm" column-spacing="md">
+    <vwc-card *ngFor="let application of applications"
+              heading="{{application.title}}"
+              icon="{{application.icon}}"
+              subtitle="{{application.subtitle}}"
+              text="{{application.text}}">
+      <vwc-icon-button-toggle
+        onicon="more-vertical-solid"
+        officon="more-vertical-solid"
+        slot="meta"
+      ></vwc-icon-button-toggle>
+    </vwc-card>
+  </vwc-layout>
+</vwc-layout>
